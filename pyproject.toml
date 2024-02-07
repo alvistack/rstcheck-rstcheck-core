@@ -1,9 +1,10 @@
 [build-system]
-requires = ["setuptools>=61", "wheel", "setuptools_scm[toml]>=6.2"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "rstcheck-core"
+version = "1.2.0"
 requires-python = ">=3.8"
 authors = [
   { name = "Steven Myint", email = "git@stevenmyint.com" },
@@ -18,7 +19,6 @@ classifiers = [
   "Topic :: Software Development :: Quality Assurance",
 ]
 keywords = ["restructuredtext", "rst", "linter", "static-analysis"]
-dynamic = ["version"]
 
 dependencies = [
   "docutils >=0.7",
@@ -63,9 +63,6 @@ dev = [
 Documentation = "https://rstcheck-core.readthedocs.io/en/latest/"
 Repository = "https://github.com/rstcheck/rstcheck-core"
 Changelog = "https://github.com/rstcheck/rstcheck-core/blob/main/CHANGELOG.md"
-
-[tool.setuptools_scm]
-write_to = "src/rstcheck_core/__version__.py"
 
 
 # -- BLACK CONFIG ---------------------------------------------------------------------
