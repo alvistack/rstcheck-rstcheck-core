@@ -18,4 +18,4 @@ objects.*.txt
 .coverage_cache/
 .ruff_cache/
 .flakeheaven_cache/
-__version__.py
+.pybuild/
